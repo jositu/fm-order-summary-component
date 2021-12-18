@@ -24,7 +24,7 @@ body {
     max-width: 350px;
 }
 
-#main img {
+#main>img {
     width: 100%;
     height: auto;
     border-radius: 20px 20px 0px 0px;
@@ -62,16 +62,21 @@ p {
     background-color: hsl(225, 100%, 98%);
     width: 100%;
     padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .plan-box>img {
-    width: 100%;
-    max-width: 50px;
-    /* height: auto; */
+    height: 100%;
+    float: left;
+    flex-grow: 0;
 }
 
 .plan-desc {
     text-align: left;
+    flex-grow: 1;
+    padding: 0px 20px;
 }
 
 .plan-desc>h3 {
@@ -91,6 +96,8 @@ p {
 .plan-box>a {
     font-weight: 700;
     font-size: 0.85rem;
+    color: hsl(245, 75%, 52%);
+    flex-grow: 0;
 }
 
 .payment-link {
